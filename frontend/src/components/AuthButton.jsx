@@ -1,10 +1,10 @@
-import api from .env
-function AuthButton({props}) {
+function AuthButton({ text, fn }) {
+
     return (
-        <>
-            <div onClick={loginf}>Login</div>
-        </>
+        <button onClick={fn}>
+            {text}
+        </button>
     )
 }
 
-export default AuthButton;
+export default AuthButton
